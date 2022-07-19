@@ -2,11 +2,34 @@
 
 require 'function.php';
 
-$animals = ['cat', 'dog'];
 
-dd('dog');
+class Task {
+
+  protected $description;
+  protected $completed = false;
+
+  public function __construct($description) {
+
+    $this -> description = $description;
+  }
+
+  public function isComplete() {
+
+    return $this-> completed;
+  }
+
+  public function description() {
+
+    return $this-> description;
+  }
 
 
-require 'index.view.php'
+}
+
+ $task = new Task('Go to the store');
+
+var_dump($task->isComplete());
+
+require 'index.view.php';
 
 ?>
