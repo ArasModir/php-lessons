@@ -51,7 +51,16 @@ header {
 
           <li>
 
-            <strong>Status: </strong><?= $task['completed'] ? 'Completed' : 'Incompleted'; ?>
+            <?php if ($task['completed']) : ?>
+
+              <span class="icon">&#9989;</span>
+
+            <?php else : ?>
+
+              <span class="icon">Incompleted</span>
+
+            <?php endif; ?>
+
 
           </li>
 

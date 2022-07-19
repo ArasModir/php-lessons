@@ -4,7 +4,7 @@ $task = [
   'title' => 'finish work',
   'due' => 'today',
   'assign_to' => 'arsalan',
-  'completed' => false
+  'completed' => true
 ];
 
 
