@@ -1,4 +1,3 @@
-
 <!Doctype html>
 
 <html lang="en">
@@ -27,19 +26,11 @@ header {
 
 <ul>
 
-  <?php foreach ($names as $name) : ?>
+  <?php foreach ($person as $key => $features) : ?>
 
-    <li><?= $name ?></li>
+    <li><strong><?= $key; ?></strong><?= $features; ?></li>
 
   <?php endforeach; ?>
-
-<?php
-
-foreach ($names as $name) {
-  echo "<li>$name</li>";
-}
-
- ?>
 
 </ul>
 
